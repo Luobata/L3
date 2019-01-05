@@ -1,9 +1,9 @@
 {
-    "name": "simply-chart",
+    "name": "L3",
     "version": "1.1.2",
     "description": "A number tendency Chart lib with canvas",
-    "main": "dist/simply-chart.js",
-    "module": "dist/simply-chart.esm.js",
+    "main": "dist/L3.js",
+    "module": "dist/L3.esm.js",
     "types": "src/index.d.ts",
     "scripts": {
         "build": "node build/build.js",
@@ -77,14 +77,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Luobata/simply-chart.git"
+        "url": "git+https://github.com/Luobata/L3.git"
     },
     "author": "luobata",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Luobata/simply-chart/issues"
+        "url": "https://github.com/Luobata/L3/issues"
     },
-    "homepage": "https://github.com/Luobata/simply-chart#readme",
+    "homepage": "https://github.com/Luobata/L3#readme",
     "dependencies": {
         "canvas-bezier-curve": "0.0.3"
     }
