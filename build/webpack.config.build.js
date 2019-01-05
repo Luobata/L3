@@ -23,6 +23,7 @@ var prodWebpackConfig = {
         libraryTarget: 'umd',
         filename: 'L3.js',
     },
+    mode: 'production',
     plugins: [
         new webpack.DefinePlugin({
             'process.env': {
