@@ -2,8 +2,8 @@
  * @desc bar chart (柱状图)
  */
 
-import Chart from '@/core/chart';
-import { enumRenderType, IBarConf, IBarConfig } from '@/lib/interface';
+import Chart from 'UI/chart';
+import { enumRenderType, IBarConf, IBarConfig } from 'Lib/interface';
 import Animation from 'canvas-bezier-curve';
 
 interface IBarRender {

@@ -4,7 +4,7 @@
     "jsRules": {},
     "rules": {
         "no-implicit-dependencies": false,
-        "no-submodule-imports": [true, "@", "Lib"],
+        "no-submodule-imports": [true, "@", "Lib", "UI", "Event", "Animate"],
         "strict-boolean-expressions": [
             true,
             "allow-null-union",

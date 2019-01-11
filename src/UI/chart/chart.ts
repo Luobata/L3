@@ -1,14 +1,14 @@
 /**
  * @desc Chart
  */
+import { addDebuggerData, hookInstall } from 'Lib/hook';
 import {
     enumRenderType,
     IBase,
     IBaseConfig,
     IConf,
     IConfig,
-} from '@/lib/interface';
-import { addDebuggerData, hookInstall } from 'Lib/hook';
+} from 'Lib/interface';
 
 const baseDefault: IBaseConfig = {
     // dom: '',

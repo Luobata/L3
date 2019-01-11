@@ -1,4 +1,3 @@
-import rollup from 'rollup';
 import babel from 'rollup-plugin-babel';
 import uglify from 'rollup-plugin-uglify';
 import alias from 'rollup-plugin-alias';
@@ -27,7 +26,10 @@ module.exports = {
             presets: [['env', { modules: false }]],
         }),
         alias({
-            Lib: path.resolve(__dirname, '../src/lib'),
+            Lib: path.resolve(__dirname, '../src/Lib'),
+            UI: path.resolve(__dirname, '../src/UI'),
+            Event: path.resolve(__dirname, '../src/Event'),
+            Animate: path.resolve(__dirname, '../src/Animate'),
             '@': path.resolve(__dirname, '../src'),
         }),
     ],

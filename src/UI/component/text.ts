@@ -6,7 +6,7 @@
  * default class
  */
 export default class Text {
-    public postion: number;
+    public position: number;
 
     constructor() {}
 }

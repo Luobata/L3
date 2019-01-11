@@ -11,7 +11,10 @@
         "baseUrl": "./",
         "paths": {
             "@/*": ["src/*"],
-            "Lib/*": ["src/lib/*"]
+            "Lib/*": ["src/Lib/*"],
+            "UI/*": ["src/UI/*"],
+            "Event/*": ["src/Event/*"],
+            "Animate/*": ["src/Animate/*"]
         },
         "lib": ["es2015", "es2017", "dom"]
     },
