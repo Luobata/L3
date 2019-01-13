@@ -2,9 +2,9 @@
  * @desc pie chart (饼图)
  */
 
-import Chart from '@/core/chart';
 import { enumRenderType, IPieConf, IPieConfig, IPoint } from '@/lib/interface';
 import Animation from 'canvas-bezier-curve';
+import Chart from 'UI/chart/chart';
 
 interface IPieData {
     start: number;

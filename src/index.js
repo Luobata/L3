@@ -1,7 +1,7 @@
 /**
  * @description entry
  */
-import pie from '@/core/pie';
+import pie from 'UI/chart/pie';
 
 export default {
     pie,
