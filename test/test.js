@@ -3,8 +3,8 @@ import Chart from '../src/';
 
 window.onload = () => {
     const basicConifg = {
-        width: 200,
-        height: 100,
+        width: 500,
+        height: 500,
         padding: 10,
         renderType: 'none',
         renderTime: 200 / 60,
@@ -16,6 +16,8 @@ window.onload = () => {
             ...basicConifg,
         },
     });
+
+    j.label('饼图的标题');
 
     j.update([2, 1, 3, 2.5, 1.5]).render();
 };

@@ -9,6 +9,7 @@ import {
     IConf,
     IConfig,
 } from 'Lib/interface';
+import Label from 'UI/component/label';
 
 const baseDefault: IBaseConfig = {
     // dom: '',
@@ -36,6 +37,7 @@ export default class Chart {
     protected animation: boolean = false;
     protected pixelRatio: number;
     protected config: IConfig;
+    protected labels: Label;
 
     constructor(config: IConf, defaultConf: IBase) {
         this.config = {
@@ -55,6 +57,12 @@ export default class Chart {
         this.getName();
         hookInstall();
         addDebuggerData(this);
+    }
+
+    public label(): Label {
+        this.labels = new Label(this);
+
+        return this.labels;
     }
 
     protected insert(): void {
