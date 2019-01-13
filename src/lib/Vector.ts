@@ -1,7 +1,7 @@
 /**
  * @description Vector
  */
-import { IPoint } from '@/lib/interface';
+import { IPoint } from 'Lib/interface';
 
 /**
  * default class Vector

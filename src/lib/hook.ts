@@ -4,7 +4,7 @@
 
 // tslint:disable no-any no-unsafe-any
 
-import Chart from '@/core/chart';
+import Chart from 'UI/chart/chart';
 
 export const hookName: string = '__DATA_DEBUGGER_DEVTOOLS_GLOBAL_HOOK__';
 export const hook: any = window ? (<any>window)[hookName] : '';
