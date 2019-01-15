@@ -12,4 +12,8 @@ export default class Label extends Text {
         super();
         this.chart = chart;
     }
+
+    public render(ctx: CanvasRenderingContext2D): void {
+        ctx.save();
+    }
 }
