@@ -5,7 +5,7 @@
 
 import { IPoint } from 'Lib/interface';
 
-interface IText {
+export interface IText {
     fontSize?: string;
     fontFamily?: string;
     fontWeight?: number;
@@ -21,7 +21,10 @@ export default class Text {
     protected fontWeight: number = 100;
     protected text: string = '';
 
-    constructor() {}
+    constructor(text: string) {
+        this.text = text;
+        // this.init(config);
+    }
 
     // 返回值boolean考虑init失败的场景
     public init(config: IText, position?: IPoint): boolean {

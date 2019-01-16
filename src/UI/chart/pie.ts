@@ -156,6 +156,7 @@ export default class Pie extends Chart {
     ): void {
         this.reset();
         this.ctx.save();
+        this.renderOther();
         this.axiesChange();
 
         for (let i: number = 0; i < data.length; i = i + 1) {
@@ -218,5 +219,14 @@ export default class Pie extends Chart {
         this.ctx.fill();
         this.ctx.closePath();
         this.ctx.restore();
+    }
+
+    /**
+     * 绘制图表之外的东西
+     */
+    private renderOther(): void {
+        if (this.labels) {
+            this.labels.render(this.ctx);
+        }
     }
 }

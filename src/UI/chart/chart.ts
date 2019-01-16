@@ -59,8 +59,8 @@ export default class Chart {
         addDebuggerData(this);
     }
 
-    public label(): Label {
-        this.labels = new Label(this);
+    public label(text: string): Label {
+        this.labels = new Label(this, text);
 
         return this.labels;
     }
