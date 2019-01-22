@@ -9,17 +9,18 @@ export interface IText {
     fontSize?: string;
     fontFamily?: string;
     fontWeight?: number;
+    color?: string;
 }
 
 /**
  * default class
  */
 export default class Text {
-    public position: IPoint;
     protected fontSize: string = '12px';
     protected fontFamily: string = 'microsoft yahei';
     protected fontWeight: number = 100;
     protected text: string = '';
+    protected color: string = 'black';
 
     constructor(text: string) {
         this.text = text;
@@ -27,11 +28,8 @@ export default class Text {
     }
 
     // 返回值boolean考虑init失败的场景
-    public init(config: IText, position?: IPoint): boolean {
+    public init(config: IText): boolean {
         Object.assign(this, config);
-        if (position) {
-            this.position = position;
-        }
 
         return true;
     }

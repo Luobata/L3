@@ -30,13 +30,13 @@ let id: number = 0;
 export default class Chart {
     public id: number;
     public name: string;
+    public pixelRatio: number;
+    public config: IConfig;
 
     protected dom: HTMLElement;
     protected canvas: HTMLCanvasElement;
     protected ctx: CanvasRenderingContext2D;
     protected animation: boolean = false;
-    protected pixelRatio: number;
-    protected config: IConfig;
     protected labels: Label;
 
     constructor(config: IConf, defaultConf: IBase) {
