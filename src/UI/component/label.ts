@@ -34,8 +34,11 @@ export default class Label extends Text {
         ctx.fillStyle = this.config.fill;
         ctx.font = `${this.fontSize} ${this.fontFamily}`;
         ctx.textBaseline = 'top';
-        // ctx.textBaseline = 'middle';
-        ctx.fillText(this.text, 0, 0);
+        ctx.fillText(
+            this.text,
+            this.position.getHorizon('center', this.getWidth(ctx)),
+            this.position.getVertical('top', this.getHeight(ctx)),
+        );
         ctx.closePath();
         ctx.restore();
     }

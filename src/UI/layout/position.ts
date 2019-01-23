@@ -5,7 +5,7 @@
 import Chart from 'UI/chart/chart';
 
 type verticalType = 'top' | 'bottom' | 'middle';
-type horizonType = 'row' | 'column';
+type horizonType = 'left' | 'center' | 'right';
 
 /**
  * default class
@@ -27,6 +27,7 @@ export default class Position {
         const start: number = this.chart.config.padding;
 
         if (dir === 'top') {
+            console.log(start);
             return this.chart.pixelRatio * start;
         } else if (dir === 'middle') {
             return this.chart.pixelRatio * (middle - height / 2);
@@ -35,9 +36,17 @@ export default class Position {
         }
     }
 
-    public getHorizon(dir: horizonTYpe, width: number): number {
+    public getHorizon(dir: horizonType, width: number): number {
         const middle: number = this.chart.config.width / 2;
+        const end: number = this.chart.config.width - this.chart.config.padding;
+        const start: number = this.chart.config.padding;
 
-        return this.chart.pixelRatio * (middle - width / 2);
+        if (dir === 'left') {
+            return this.chart.pixelRatio * start;
+        } else if (dir === 'center') {
+            return this.chart.pixelRatio * (middle - width / 2);
+        } else {
+            return this.chart.pixelRatio * (end - width);
+        }
     }
 }
