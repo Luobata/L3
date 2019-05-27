@@ -14,6 +14,10 @@ interface ILabelAttr {
 type ILabel = IText & ILabelAttr;
 
 export default class Label extends Text {
+    // Label矩形的宽高
+    public width: number;
+    public height: number;
+
     private chart: Chart;
     private config: ILabelAttr;
     // position 用来标志label位置
